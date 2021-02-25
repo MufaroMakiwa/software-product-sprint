@@ -16,13 +16,41 @@
  * Adds a random greeting to the page.
  */
 function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
 
+  const quotes = [
+    "Red: If people were more kind and loving, then the world would be too.",
+
+    "Aram: I’m not saying I’m amazing, but sometimes I’m distinctly above average.",
+
+    "Red: As a fugitive of justice, I prefer not to linger in hallways.",
+
+    "Red: Wisdom is learning the boundaries of one’s designated lane.",
+
+    "Red: Read the book, think positive, control your urges, and I’ll put your gift to good use.",
+
+    "Red: You’re a good friend who takes more care of me than I deserve.",
+
+    "Red:  Revenge isn’t a passion. It’s a disease. It eats at your mind and poisons your soul.",
+
+    "Scottie: There’s a very fine line between love and hate.",
+
+    "Red: Sins should be buried like the dead. Not that they may be forgotten but we may them and find our way forward nonetheless.",
+
+    "Red: No matter what I tried to do, all I brought her was misery and violence.",
+
+    "Red: As my grandmother said, it’s good to have friends in low places.",
+
+    "Red: Leave the past in the past, Tom. Nothing good comes from digging up secrets.",
+
+    "Red: Sometimes bad luck is the best luck you’ll ever have.",
+
+    "Sinclair: Whoever you are, confronting it with violence, is no path to resolution.",
+  ]
+  
   // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const quoteContainer = document.getElementById('greeting-container');
+  quoteContainer.innerText = quote;
 }
