@@ -53,5 +53,4 @@ function addRandomGreeting() {
   // Add it to the page.
   const quoteContainer = document.getElementById('greeting-container');
   quoteContainer.innerText = quote;
-  console.log("quote");  
 }
