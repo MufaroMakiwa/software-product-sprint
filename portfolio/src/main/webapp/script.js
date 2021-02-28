@@ -42,35 +42,17 @@ function addRandomGreeting() {
   quoteContainer.innerText = quote;
 }
 
-/**
- * Adds the smooth scroll effect
- */
-
-//  $(document).ready(function(){
-//   $(".navbar a").on('click', function(event) {
-
-//     if (this.hash !== "") {
-
-//       event.preventDefault();
-
-//       const hash = this.hash;
-//       $('html, body').animate({
-//         scrollTop: $(hash).offset().top
-//       }, 1300, function(){
-//         window.location.hash = hash;
-//       });
-//     }
-//   });
-// });
-
 
 $(document).ready(function(){
+  $('ul.menu > li').click(function (e) { 
+    $('ul.menu > li') 
+        .removeClass('active'); 
+    $(this).addClass('active'); 
+  }); 
+
   $(".navbar a").on('click', function(event) {
-
     if (this.hash !== "") {
-
       event.preventDefault();
-
       const hash = this.hash;
       $('html, body')
         .animate({
@@ -80,4 +62,53 @@ $(document).ready(function(){
   });
 });
 
-// const scroll = new SmoothScroll('a[href*="#"]');
+
+// // Cache selectors
+// let lastId = null;
+// topMenu = $(".menu"),
+// topMenuHeight = topMenu.outerHeight() + 15,
+
+// // All list items
+//  menuItems = topMenu.find('a[href^="#"]'),
+
+// // Anchors corresponding to menu items
+// scrollItems = menuItems.map(function(){
+//   const item = $($(this).attr("href"));
+//   if (item.length) { return item; }
+// });
+
+// // Bind click handler to menu items so we can get a fancy scroll animation
+// menuItems.click(function(e){
+//   const href = $(this).attr("href"),
+//       offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+//   $('html, body').stop().animate({ 
+//       scrollTop: offsetTop
+//   }, 300);
+//   e.preventDefault();
+// });
+
+// // Bind to scroll
+// $(window).scroll(function(){
+//    // Get container scroll position
+//    const fromTop = $(this).scrollTop() + topMenuHeight;
+   
+//    // Get id of current scroll item
+//    let cur = scrollItems.map(function(){
+//      if ($(this).offset().top < fromTop)
+//        return this;
+//    });
+
+//    // Get the id of the current element
+//    cur = cur[cur.length-1];
+//    const id = cur && cur.length ? cur[0].id : "";
+   
+//    if (lastId !== id) {
+//        lastId = id;
+
+//        // Set/remove active class
+//        menuItems
+//          .parent().removeClass("active")
+//          .end().filter("[href='#"+id+"']").parent().addClass("active");
+//    }                   
+// });
+
