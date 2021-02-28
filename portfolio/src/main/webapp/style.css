@@ -55,7 +55,8 @@ body {
   transition: all 0.3;
 }
 
-.menu > .active > a{
+
+.navbar ul li.active a{
   color: skyblue;
 }
 

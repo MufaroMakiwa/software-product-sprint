@@ -44,12 +44,6 @@ function addRandomGreeting() {
 
 
 $(document).ready(function(){
-  $('ul.menu > li').click(function (e) { 
-    $('ul.menu > li') 
-        .removeClass('active'); 
-    $(this).addClass('active'); 
-  }); 
-
   $(".navbar a").on('click', function(event) {
     if (this.hash !== "") {
       event.preventDefault();
@@ -62,53 +56,15 @@ $(document).ready(function(){
   });
 });
 
+$(window).scroll(function() {
+  let scrollDistance = $(window).scrollTop() + 60; // 60 is the height of the navbar
 
-// // Cache selectors
-// let lastId = null;
-// topMenu = $(".menu"),
-// topMenuHeight = topMenu.outerHeight() + 15,
-
-// // All list items
-//  menuItems = topMenu.find('a[href^="#"]'),
-
-// // Anchors corresponding to menu items
-// scrollItems = menuItems.map(function(){
-//   const item = $($(this).attr("href"));
-//   if (item.length) { return item; }
-// });
-
-// // Bind click handler to menu items so we can get a fancy scroll animation
-// menuItems.click(function(e){
-//   const href = $(this).attr("href"),
-//       offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-//   $('html, body').stop().animate({ 
-//       scrollTop: offsetTop
-//   }, 300);
-//   e.preventDefault();
-// });
-
-// // Bind to scroll
-// $(window).scroll(function(){
-//    // Get container scroll position
-//    const fromTop = $(this).scrollTop() + topMenuHeight;
-   
-//    // Get id of current scroll item
-//    let cur = scrollItems.map(function(){
-//      if ($(this).offset().top < fromTop)
-//        return this;
-//    });
-
-//    // Get the id of the current element
-//    cur = cur[cur.length-1];
-//    const id = cur && cur.length ? cur[0].id : "";
-   
-//    if (lastId !== id) {
-//        lastId = id;
-
-//        // Set/remove active class
-//        menuItems
-//          .parent().removeClass("active")
-//          .end().filter("[href='#"+id+"']").parent().addClass("active");
-//    }                   
-// });
-
+  $('section').each(function(i) {
+    let positionTop = $(this).position().top;
+    let height = $(this).height();
+    if (positionTop <= scrollDistance && positionTop + height > scrollDistance) {
+      $('.navbar .menu li.active').removeClass('active');
+      $('.navbar .menu li').eq(i).addClass('active');
+    }
+  });
+}).scroll();
