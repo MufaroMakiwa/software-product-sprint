@@ -41,3 +41,43 @@ function addRandomGreeting() {
   const quoteContainer = document.getElementById('greeting-container');
   quoteContainer.innerText = quote;
 }
+
+/**
+ * Adds the smooth scroll effect
+ */
+
+//  $(document).ready(function(){
+//   $(".navbar a").on('click', function(event) {
+
+//     if (this.hash !== "") {
+
+//       event.preventDefault();
+
+//       const hash = this.hash;
+//       $('html, body').animate({
+//         scrollTop: $(hash).offset().top
+//       }, 1300, function(){
+//         window.location.hash = hash;
+//       });
+//     }
+//   });
+// });
+
+
+$(document).ready(function(){
+  $(".navbar a").on('click', function(event) {
+
+    if (this.hash !== "") {
+
+      event.preventDefault();
+
+      const hash = this.hash;
+      $('html, body')
+        .animate({
+        scrollTop: $(hash).offset().top
+      }, 800);
+    }
+  });
+});
+
+// const scroll = new SmoothScroll('a[href*="#"]');
