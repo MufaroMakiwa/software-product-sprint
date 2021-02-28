@@ -42,7 +42,6 @@ function addRandomGreeting() {
   quoteContainer.innerText = quote;
 }
 
-
 $(document).ready(function(){
   $(".navbar a").on('click', function(event) {
     if (this.hash !== "") {
@@ -58,6 +57,7 @@ $(document).ready(function(){
 
 $(window).scroll(function() {
   let scrollDistance = $(window).scrollTop() + 60; // 60 is the height of the navbar
+  let navBarTitle = document.getElementById('navbar_title');
 
   $('section').each(function(i) {
     let positionTop = $(this).position().top;
@@ -65,6 +65,12 @@ $(window).scroll(function() {
     if (positionTop <= scrollDistance && positionTop + height > scrollDistance) {
       $('.navbar .menu li.active').removeClass('active');
       $('.navbar .menu li').eq(i).addClass('active');
+
+      if (positionTop === 0) {
+        navBarTitle.classList.add("hidden");
+      } else {
+        navBarTitle.classList.remove("hidden");
+      }
     }
   });
 }).scroll();
