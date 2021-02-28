@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>Mufaro's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="background.css">    
+    <link rel="stylesheet" href="background.css">   
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
   </head>
@@ -27,34 +28,62 @@
         </ul>
       </nav>
 
-      <section id="home" style="background-color: green;">
+      <section id="home">
         <h1>Mufaro's Portfolio</h1>
         <div class="profile_image_container">
           <img src="/images/happy.jpg" />
         </div>
       </section>
 
-      <section id="about" style="background-color: red;">
-        <p>My name is Mufaro Makiwa and I am from Zimbabwe. I am currently a sophomore at Massachusetts Institute of Technology studying Electrical Engineering 
-          and Computer Science, better known as Course 6-2. I am EXTREMELY addicted to anything with strawberries - when I have a craving for a strawberry smoothie 
-          in the middle of the night, I will not be able to sleep lol. My favorite musical instrument is a bass guitar and I have been learning to play for the past 2 years 
-          with very little progress. I love eating a lot, usually watching and even repeating old episodes of my favorite show, The Blacklist. 
-        </p>
+      <section id="about">
+        <div class="section_heading_container">
+          <h1 class="section_heading">About</h1>
+          <hr class="heading_horizontal_line"/>
+        </div>
+        
+        <div class="section_content">
+          <p class="about">
+            My name is Mufaro Makiwa. I was grew up Zimbabwe, where I spent 19 years before moving to the United 
+            States for college.I am currently a sophomore at Massachusetts Institute of Technology studying Electrical 
+            Engineering and Computer Science, better known as Course 6-2. My favorite musical instrument is the bass 
+            guitar which I have been learning to play for the past 2 years with very little progress. I love eating 
+            strawberry ice cream lot, usually watching or even repeating old episodes of my favorite show, The Blacklist. 
+          </p>
+
+          <div class="quotes_container">
+            <p class="server_code_text">Click <a href="/hello">here</a> to see content created by server code.</p>
+              <p>Click button below to get a random quote from my favorite show: The Blacklist:</p>
+              <button class="quote_button" onclick="addRandomGreeting()">GET QUOTE</button>
+            <div id="greeting-container">
+              <span class="placeholder_text">Click button above to get random quote</span>
+            </div>
+          </div>
+        </div>        
+        
       </section>
       
-      <section id="projects" style="background-color: purple;">
-        <hi>TO CONTAIN PROJECTS</hi>
+      <section id="projects" >
+        <div class="section_heading_container">
+          <h1 class="section_heading">Projects</h1>
+          <hr class="heading_horizontal_line"/>
+        </div>
+
+        <div class="section_content">
+          <hi>TO CONTAIN PROJECTS</hi>
+        </div>
+        
       </section>
 
-      <section id="classes" style="background-color: greenyellow;">
-        <hi>TO CONTAIN ALL THE CLASSES I HAVE TAKEN SO FAR</hi>
-      </section>
+      <section id="classes" >
+        <div class="section_heading_container">
+          <h1 class="section_heading">Classes</h1>
+          <hr class="heading_horizontal_line"/>
+        </div>
 
-      <section id="quotes" style="background-color: bisque;">
-        <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-        <p>Click here to get a random quote from The Blacklist:</p>
-        <button onclick="addRandomGreeting()">Hello</button>
-        <div id="greeting-container"></div>
+        <div class="section_content">
+          <hi>TO CONTAIN ALL THE CLASSES I HAVE TAKEN SO FAR</hi>
+        </div>
+
       </section>
     </div>
   </body>
