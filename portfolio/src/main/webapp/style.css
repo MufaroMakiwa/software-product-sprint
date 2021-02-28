@@ -37,7 +37,7 @@ body {
   align-items: center;
 }
 
-.navbar .navbar_content{
+.navbar .navbar_content {
   max-width: 1300px;
   width: 100%;
   padding: 0 24px;
@@ -47,8 +47,7 @@ body {
   transition: all 0.3s;
 }
 
-
-.navbar .title{
+.navbar .navbar_content .title {
   display: flex;
   flex-grow: 1;
   align-items: center;
@@ -68,7 +67,7 @@ body {
   transition: all 0.3s;
 }
 
-.navbar ul{
+.navbar ul {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -76,35 +75,33 @@ body {
   flex-direction: row;
 }
 
-.navbar ul li{
+.navbar ul li {
   margin: 0 1rem;
   padding: 1rem;
 }
 
-.navbar ul li:last-of-type{
+.navbar ul li:last-of-type {
   padding-right: 0;
   margin-right: 0;
 }
 
-.navbar ul li:first-of-type{
+.navbar ul li:first-of-type {
   padding-left: 0;
   margin-left: 0;
 }
 
-.navbar ul li a{
+.navbar ul li a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
   transition: all 0.3;
 }
 
-
-.navbar ul li.active a{
+.navbar ul li.active a {
   color: skyblue;
 }
 
-
-.navbar ul li a:hover{
+.navbar ul li a:hover {
   color: orange;
 }
 
@@ -119,7 +116,7 @@ section {
   text-align: center;
 }
 
-section:first-of-type{
+section:first-of-type {
   align-items: center;
   position: relative;
 }
@@ -130,7 +127,6 @@ section:first-of-type{
   justify-content: center;
   align-items: center;
 }
-
 
 .home_header_text {
   font-size: 4em;
@@ -145,7 +141,6 @@ section:first-of-type{
   justify-content: center;
   align-items: center;
 }
-
 
 .home_profile_link {
   height: 35px;
@@ -162,7 +157,7 @@ section:first-of-type{
   transform: scale(1.1);
 }
 
-.home_page_container{
+.home_page_container {
   position: absolute;
   top: calc(24px + 60px);
   bottom: 24px;
@@ -190,7 +185,7 @@ section:first-of-type{
   font-weight: bold;
 }
 
-.heading_horizontal_line{
+.heading_horizontal_line {
   border: 2px solid rgba(136, 131, 131, 0.411);
   width: 100%;
 }
@@ -220,7 +215,7 @@ section:first-of-type{
   font-style: italic;
 }
 
-.section_content .quote_button{
+.section_content .quote_button {
   outline: none;
   cursor: pointer;
   border-radius: 8px;

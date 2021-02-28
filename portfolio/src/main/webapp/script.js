@@ -42,6 +42,10 @@ function addRandomGreeting() {
   quoteContainer.innerText = quote;
 }
 
+
+/**
+ * Smooth scroll to section when navbar link is clicked
+ */ 
 $(document).ready(function(){
   $(".navbar a").on('click', function(event) {
     if (this.hash !== "") {
@@ -55,39 +59,12 @@ $(document).ready(function(){
   });
 });
 
-$(document).ready(function() {
-    if (window.location.hash) { 
-        //bind to scroll function
-        $(document).scroll( function() {
-            var hash = window.location.hash
-            var hashName = hash.substring(1, hash.length);
-            var element;
 
-            //if element has this id then scroll to it
-            if ($(hash).length != 0) {
-                element = $(hash);
-            }
-            //catch cases of links that use anchor name
-            else if ($('a[name="' + hashName + '"]').length != 0)
-            {
-                //just use the first one in case there are multiples
-                element = $('a[name="' + hashName + '"]:first');
-            }
-
-            //if we have a target then go to it
-            if (element != undefined) {
-                window.scrollTo(0, element.position().top);
-            }
-            //unbind the scroll event
-            $(document).unbind("scroll");
-        });
-    }
-
-});
-
+/**
+ * Change active navbar link as the user scrolls
+ */
 $(window).scroll(function() {
   let scrollDistance = $(window).scrollTop() + 60; // 60 is the height of the navbar
-  let navBarTitle = document.getElementById('navbar_title');
 
   $('section').each(function(i) {
     let positionTop = $(this).position().top;
@@ -97,9 +74,9 @@ $(window).scroll(function() {
       $('.navbar .menu li').eq(i).addClass('active');
 
       if (positionTop === 0) {
-        navBarTitle.classList.add("hidden");
+        $('#navbar_title').addClass("hidden");
       } else {
-        navBarTitle.classList.remove("hidden");
+        $('#navbar_title').removeClass("hidden");
       }
     }
   });
