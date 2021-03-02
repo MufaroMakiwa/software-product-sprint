@@ -204,7 +204,7 @@ section:first-of-type {
   line-height: 2em;
 }
 
-.section_content .quotes_container {
+.quotes_container {
   margin-top: 32px;
   width: 100%;
 }
@@ -215,7 +215,7 @@ section:first-of-type {
   font-style: italic;
 }
 
-.section_content .quote_button {
+.quote_button {
   outline: none;
   cursor: pointer;
   border-radius: 8px;
@@ -227,7 +227,7 @@ section:first-of-type {
   border: none;  
 }
 
-.section_content .quote_button:hover {
+.quote_button:hover {
   background-color: #9da4b1;
 }
 
@@ -245,7 +245,7 @@ section:first-of-type {
   max-height: 100%;
 }
 
-#greeting-container {
+.text-container {
   display: flex;
   width: 100%;
   align-items: center;
@@ -257,7 +257,11 @@ section:first-of-type {
   min-height: 48px;
 }
 
-#greeting-container .placeholder_text {
+.placeholder_text {
   font-style: italic;
   color: rgba(136, 131, 131, 0.95);
+}
+
+.random_text {
+  margin: 8px 0 16px 0;
 }

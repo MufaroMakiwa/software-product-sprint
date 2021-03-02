@@ -15,7 +15,7 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
+const addRandomGreeting = () => {
 
   const quotes = [
     "Red: If people were more kind and loving, then the world would be too.",  
