@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script src="server.js"></script>
   </head>
 
   <body>  
@@ -29,6 +30,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#classes">Classes</a></li>
+            <li><a href="#other">Other</a></li>            
           </ul>
         </div>
       </nav>
@@ -77,13 +79,12 @@
           </p>
 
           <div class="quotes_container">
-            <p class="server_code_text">Click <a href="/hello">here</a> to see content created by server code.</p>
-
+      
             <p>Click button below to get a random quote from my favorite show: The Blacklist:</p>
 
             <button class="quote_button" onclick="addRandomGreeting()">GET QUOTE</button>
 
-            <div id="greeting-container">
+            <div id="greeting-container" class="text-container">
               <span class="placeholder_text">Click button above to get random quote</span>
             </div>
           </div>
@@ -111,6 +112,17 @@
           <hi>TO CONTAIN ALL THE CLASSES I HAVE TAKEN SO FAR</hi>
         </div>
       </section>
+
+      <section id="other">
+        <div class="section_content">
+          <button class="quote_button" onclick="getMessage()">GET RANDOM MESSAGE</button>
+
+          <div class="text-container">
+            <span id="server-text-container"></span>
+          </div>
+        </div>
+      </section>
+
     </div>
   </body>
 </html>
