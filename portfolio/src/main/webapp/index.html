@@ -104,13 +104,34 @@
 
       <section id="contact" >
         <div class="section_heading_container">
-          <h1 class="section_heading">Contact</h1>
+          <h1 class="section_heading">Contact Me</h1>
           <hr class="heading_horizontal_line"/>
         </div>
 
         <div class="section_content">
-          <form method="POST">
-            <p>Enter some text here:</p>
+          <form action="/form-handler" method="POST">
+            <p>Here is how you can contact me:</p>
+            
+            <div class="name_email">
+              <input	
+                type="text"
+                placeholder="Name"      
+                class="name_email_input"
+                name="name_input"
+                autoComplete="off"
+                id="name_input">
+              </input>
+
+              <input	
+                type="text"
+                placeholder="Email"      
+                class="name_email_input"
+                name="email_input"
+                autoComplete="off"
+                id="email_input">
+              </input>
+            </div>
+
             <textarea name="text-input">hello world</textarea>
             <br/>
             <input type="submit" />
