@@ -355,3 +355,19 @@ input:focus, textarea:focus, select:focus{
   font-style: italic;
 }
 
+.messages {
+  border-radius: 16px;
+  margin-top: 64px;
+  width: 60%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(145, 143, 143);
+}
+
+.messages_header {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: white;
+  margin-bottom: 32px;
+}

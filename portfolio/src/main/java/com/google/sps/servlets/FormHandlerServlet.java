@@ -20,6 +20,7 @@ public class FormHandlerServlet extends HttpServlet {
   private final String EMAIL = "email";
   private final String SUBJECT = "subject";
   private final String MESSAGE = "message";
+  private final String TIMESTAMP = "timestamp";
 
 
   @Override
@@ -41,8 +42,9 @@ public class FormHandlerServlet extends HttpServlet {
               .set(EMAIL, email)
               .set(SUBJECT, subject)
               .set(MESSAGE, message)
+              .set(TIMESTAMP, System.currentTimeMillis())
               .build();
     datastore.put(messageEntity);
-    response.sendRedirect("/index.html");
+    response.sendRedirect("/");
   }
 }
