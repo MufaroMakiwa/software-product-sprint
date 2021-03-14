@@ -1,15 +1,9 @@
 let userName = false, userEmail = false, subject = false, message = false;
 let buttonDisabled = true;
 
-const updateField = (element, field) => {
-  let text = element.value;
-  console.log(text)
-}
-
 const onNameChange = (element) => {
   value = element.value;
   value !== "" ? userName = true : userName = false;
-  updateField(element, userName);
   enableSubmitButton();
 }
 

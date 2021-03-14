@@ -233,6 +233,6 @@ Make sure your code is submitted to your repo before the end of the week.
 
 To return to the libraries walkthrough, run this command:
 
-```bash
+```bash
 teachme ~/software-product-sprint/walkthroughs/week-3-libraries/libraries-walkthrough.md
 ```
