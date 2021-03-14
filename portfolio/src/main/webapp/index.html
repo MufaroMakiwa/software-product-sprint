@@ -29,7 +29,7 @@
             <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#classes">Classes</a></li>
+            <li><a href="#contact">Contact</a></li>
             <li><a href="#other">Other</a></li>            
           </ul>
         </div>
@@ -102,14 +102,40 @@
         </div>    
       </section>
 
-      <section id="classes" >
+      <section id="contact" >
         <div class="section_heading_container">
-          <h1 class="section_heading">Classes</h1>
+          <h1 class="section_heading">Contact Me</h1>
           <hr class="heading_horizontal_line"/>
         </div>
 
         <div class="section_content">
-          <hi>TO CONTAIN ALL THE CLASSES I HAVE TAKEN SO FAR</hi>
+          <form action="/form-handler" method="POST">
+            <p>Here is how you can contact me:</p>
+            
+            <div class="name_email">
+              <input	
+                type="text"
+                placeholder="Name"      
+                class="name_email_input"
+                name="name_input"
+                autoComplete="off"
+                id="name_input">
+              </input>
+
+              <input	
+                type="text"
+                placeholder="Email"      
+                class="name_email_input"
+                name="email_input"
+                autoComplete="off"
+                id="email_input">
+              </input>
+            </div>
+
+            <textarea name="text-input">hello world</textarea>
+            <br/>
+            <input type="submit" />
+          </form>
         </div>
       </section>
 
