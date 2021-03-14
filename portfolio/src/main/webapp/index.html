@@ -9,6 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <script src="server.js"></script>
+    <script src="contact.js"></script>
   </head>
 
   <body>  
@@ -110,7 +111,7 @@
 
         <div class="section_content">
           <form 
-            action="/form-handler" 
+            action="/contact-form-handler" 
             method="POST"
             class="contact_form">
             
@@ -126,7 +127,7 @@
 
               <input	
                 type="text"
-                placeholder="Email"      
+                placeholder="Email"
                 class="email_input"
                 name="email_input"
                 autoComplete="off"
@@ -155,7 +156,8 @@
 
             <input 
               type="submit"
-              class="submit_button" />
+              class="submit_button"
+              id="submit_button" />
             </div>
          
           </form>

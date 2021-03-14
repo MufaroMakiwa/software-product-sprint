@@ -343,5 +343,14 @@ input:focus, textarea:focus, select:focus{
   color: white;
   text-decoration: none;
   outline: none;
+  cursor: pointer;
 }
 
+
+.error_message {
+  color: rgb(250, 109, 109);
+  font-size: 0.8em;
+  padding: 8px;
+  font-weight: bold;
+  font-style: italic;
+}
