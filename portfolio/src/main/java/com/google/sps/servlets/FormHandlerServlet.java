@@ -23,13 +23,11 @@ public class FormHandlerServlet extends HttpServlet {
     System.out.println(userInput);
 
     // Respond with the result.
-    response.setContentType("text/html;");
     response.getWriter().println(userInput);
   }
 
 
   private String getParameter(HttpServletRequest request, String name) {
     return request.getParameter(name);
-
   }
 }
