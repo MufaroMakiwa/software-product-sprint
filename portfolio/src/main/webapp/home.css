@@ -1,3 +1,7 @@
+:root {
+  --border_color: rgba(255, 255, 255, 0.7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,12 +9,13 @@
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Karla", sans-serif;
   display: flex;
   color: white;
 }
 
 .home_background {
+  z-index: -100;
   display: flex;
   position: fixed;
   top: 0;
@@ -18,5 +23,125 @@ body {
   left: 0;
   right: 0;
   background: url("/images/bg-pattern.png"),
-    linear-gradient(to left, #076585, #7bb9ce);
+    linear-gradient(to bottom, #076585, #7bb9ce);
+}
+
+.home_container {
+  padding: 16px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home_main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.home_image_container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.home_image {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.home_vertical_line {
+  height: 50px;
+  border-left: 2px solid var(--border_color);
+}
+
+.home_horizontal_line {
+  width: 100%;
+  background-color: var(--border_color);
+  height: 2px;
+  border: 0;
+}
+
+.home_name {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 4px;
+  padding: 16px;
+}
+
+.home_buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: 1px solid var(--border_color);
+}
+
+.home_button_link {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid var(--border_color);
+}
+
+.home_nav {
+  padding: 16px;
+  transition: all 0.2s;
+  width: 100%;
+  height: 100%;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.home_nav:hover {
+  transform: scale(1.2);
+}
+
+.home_profile_links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+.home_link {
+  text-decoration: none;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  transition: all 0.2s;
+}
+
+.home_link:hover {
+  transform: scale(1.1);
+}
+
+.home_link_icon {
+  width: 25px;
+  height: 25px;
+}
+
+.home_link_text {
+  margin-top: 8px;
+  text-align: center;
+  color: white;
 }
