@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css"> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="particles.js"></script>
+    <script src="quotes.js"></script>
   </head>
 
   <body>  
@@ -27,6 +28,34 @@
       </div>
     </nav>  
     <div class="background" id="about_particles_div"></div>
+
+    <div class="page_container"> 
+      <div class="page_heading_container">
+        <h1 class="page_heading">About</h1>
+        <hr class="heading_horizontal_line"/>
+      </div>
+
+      <div class="about_page_content">
+        <p class="about_summary">
+          My name is Mufaro Emmanuel Makiwa. I grew up in Zimbabwe and moved to the United 
+          States for college in 2019. I am currently a sophomore at Massachusetts Institute 
+          of Technology studying Electrical Engineering and Computer Science. I have an avid 
+          interest in building mobile and web application that are fast and secure while 
+          providing the best experience to the end users. I love to spend my free time 
+          learning how to play musical instruments, my favorite being the bass guitar. 
+          I also spend my time watching tv shows, and the best show I have ever watched is called The Blacklist.
+        </p>
+
+        <div class="about_quotes">
+          <button class="about_quote_button" onclick="getRandomMessage()">GET RANDOM QUOTE</button>
+
+          <div class="about_text_container" id="server-text-container">
+            <span class="about_placeholder_text">Click button above to get a random quote</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       particlesJS.load("about_particles_div", "particles.json")
     </script>

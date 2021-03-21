@@ -1,0 +1,65 @@
+.about_page_content {
+  width: 100%;
+  margin-top: 32px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.about_summary {
+  line-height: 2em;
+  background-color: white;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid var(--border_color);
+}
+
+.about_quotes {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_quote_button {
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 24px;
+  padding: 16px 24px;
+  background-color: var(--button_color);
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+.about_quote_button:hover {
+  background-color: var(--button_color_hover);
+}
+
+.about_text_container {
+  background-color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  border: 1px solid var(--border_color);
+  border-radius: 8px;
+  padding: 16px;
+  min-height: 48px;
+  color: rgba(136, 131, 131, 0.95);
+}
+
+.about_placeholder_text {
+  font-style: italic;
+  color: rgba(136, 131, 131, 0.95);
+}
+
+.about_random_text {
+  margin: 8px 0 16px 0;
+}
