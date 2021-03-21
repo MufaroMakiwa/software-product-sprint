@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  color: white;
+}
+
+.home_background {
+  display: flex;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("/images/bg-pattern.png"),
+    linear-gradient(to left, #076585, #7bb9ce);
+}
