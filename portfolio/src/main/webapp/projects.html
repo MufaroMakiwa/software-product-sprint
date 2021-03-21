@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mufaro's Portfolio</title>
+    <link rel="stylesheet" href="about.css"> 
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="particles.js"></script>
+  </head>
+
+  <body>  
+    <nav class="navbar" >
+      <div class="navbar_content">
+        <div class="navbar_title" id="navbar_title">
+          Mufaro E. Makiwa
+        </div>
+
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li class="active"><a href="/projects.html">Projects</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/other.html">Resume</a></li>            
+        </ul>
+      </div>
+    </nav>  
+    <div class="background" id="about_particles_div"></div>
+    <script>
+      particlesJS.load("about_particles_div", "particles.json")
+    </script>
+  </body>
+</html>
