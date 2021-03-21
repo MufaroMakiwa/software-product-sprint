@@ -1,46 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <title>Mufaro's Portfolio</title>
-    <link rel="stylesheet" href="style.css"> 
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="server.js"></script>
     <script src="contact.js"></script>
   </head>
 
   <body>  
     <div class="content">
-      <nav class="navbar" >
-        <div class="navbar_content">
-          <div class="title hidden" id="navbar_title">
-            Mufaro's Portfolio
-          </div>
 
-          <ul class="menu">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#other">Other</a></li>            
-          </ul>
-        </div>
-      </nav>
-
-      <section id="about">
-        <div class="section_heading_container">
-          <h1 class="section_heading">About</h1>
-          <hr class="heading_horizontal_line"/>
-        </div>
-        
-        <div class="section_content">
-          
-
-          
-        </div>               
-      </section>
       
       <section id="projects" >
         <div class="section_heading_container">
@@ -54,47 +20,12 @@
       </section>
 
       <section id="contact" >
-        <div class="section_heading_container">
-          <h1 class="section_heading">Contact Me</h1>
-          <hr class="heading_horizontal_line"/>
-        </div>
-
-        <div class="section_content contact_section">
-          <form 
-            action="/contact-form-handler" 
-            method="POST"
-            class="contact_form">
-            
-            <div class="name_email">
-              <input type="text" placeholder="Name" class="name_input" name="name_input" autoComplete="off" id="name_input" onkeydown="return event.key != 'Enter';" />
-              <input type="text" placeholder="Email" class="email_input" name="email_input" autoComplete="off" id="email_input" onkeydown="return event.key != 'Enter';" />
-            </div>
-
-            <div class="subject_message">
-              <input type="text" placeholder="Subject" class="subject_input" name="subject_input" autoComplete="off" id="subject_input" onkeydown="return event.key != 'Enter';" />
-              <textarea type="text" resize="none" placeholder="Message" class="message_input" name="message_input" autoComplete="off" id="message_input"></textarea>
-              <input type="submit" class="submit_button" id="submit_button" />
-            </div>
-          </form>
-
-          
           <div class="messages" id="messages_container">
             <span class="messages_header">Current Messages</span>
           </div>
 
         </div>
       </section>
-
-      <section id="other">
-        <div class="section_content">
-          <button class="quote_button" onclick="getRandomMessage()">GET RANDOM QUOTE</button>
-
-          <div class="text-container" id="server-text-container">
-            <span class="placeholder_text">Click button above to get random quote</span>
-          </div>
-        </div>
-      </section>
-
     </div>
   </body>
 </html>
