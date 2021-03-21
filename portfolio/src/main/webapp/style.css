@@ -44,16 +44,18 @@
 
 .navbar_title {
   display: flex;
-  flex-grow: 1;
   align-items: center;
   justify-content: flex-start;
   font-weight: bold;
   font-size: 1.5em;
   color: black;
+  text-decoration: none;
+  transition: all 0.2s;
 }
 
-.navbar ul li.active a {
-  color: skyblue;
+.navbar_title:hover {
+  transform: scale(1.05);
+  color: gray;
 }
 
 .navbar ul {
