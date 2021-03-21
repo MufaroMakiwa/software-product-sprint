@@ -2,12 +2,6 @@
   --border_color: rgba(255, 255, 255, 0.7);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   display: flex;
   color: white;

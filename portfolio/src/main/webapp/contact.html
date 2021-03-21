@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Mufaro's Portfolio</title>
-    <link rel="stylesheet" href="about.css"> 
+    <title>Mufaro's Portfolio | Contact</title>
+    <link rel="stylesheet" href="contact.css"> 
     <link rel="stylesheet" href="style.css"> 
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css"> 
@@ -17,7 +17,6 @@
         <a href="/" class="navbar_title">      
           Mufaro E. Makiwa
         </a>
-
         <ul>
           <li><a href="/about.html">About</a></li>
           <li><a href="/projects.html">Projects</a></li>
@@ -27,6 +26,34 @@
       </div>
     </nav>  
     <div class="background" id="contact_particles_div"></div>
+
+    <div class="page_container"> 
+      <div class="page_heading_container">
+        <h1 class="page_heading">Contact Me</h1>
+        <hr class="heading_horizontal_line"/>
+      </div>
+
+      <div class="page_content">
+        <form 
+          action="/contact-form-handler" 
+          method="POST"
+          class="contact_form">
+          
+          <div class="contact_name_email">
+            <input type="text" placeholder="Name" class="contact_input contact_name_input" name="name_input" autoComplete="off" id="name_input" onkeydown="return event.key != 'Enter';" />
+            <input type="text" placeholder="Email" class="contact_input contact_email_input" name="email_input" autoComplete="off" id="email_input" onkeydown="return event.key != 'Enter';" />
+          </div>
+
+          <div class="contact_subject_message">
+            <input type="text" placeholder="Subject" class="contact_input contact_subject_input" name="subject_input" autoComplete="off" id="subject_input" onkeydown="return event.key != 'Enter';" />
+            <textarea type="text" resize="none" placeholder="Message" class="contact_input contact_message_input" name="message_input" autoComplete="off" id="message_input"></textarea>
+            <input type="submit" class="contact_submit_button" id="submit_button" />
+          </div>
+        </form>
+
+      </div>
+    </div>
+
     <script>
       particlesJS.load("contact_particles_div", "particles.json")
     </script>
