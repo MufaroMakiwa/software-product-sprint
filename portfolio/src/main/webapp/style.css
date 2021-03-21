@@ -109,7 +109,7 @@ select:focus {
 
 .navbar ul li.active a,
 .navbar ul li.active a:hover {
-  color: skyblue;
+  color: #87ceeb;
 }
 
 .page_container {
