@@ -5,6 +5,9 @@
   --button_color: #6c7078;
   --button_color_hover: #9aa0ac;
   --border_color: rgb(202, 202, 202);
+  --nav_load_time: 300ms;
+  --nav_link_load_time: 500ms;
+  --content_load_delay: calc(var(--nav_load_time) + var(--nav_link_load_time));
   font-family: "Inter", sans-serif;
 }
 
@@ -51,6 +54,7 @@ textarea {
   -webkit-box-shadow: 0 10px 6px -6px var(--navbar_shadow);
   -moz-box-shadow: 0 10px 6px -6px var(--navbar_shadow);
   box-shadow: 0 2px 6px 0px var(--navbar_shadow);
+  animation: nav_load var(--nav_load_time) ease-in;
 }
 
 .navbar_content {
@@ -72,6 +76,10 @@ textarea {
   color: black;
   text-decoration: none;
   transition: all 0.2s;
+  animation: nav_link_load var(--nav_link_load_time) ease-in
+    var(--nav_load_time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 
 .navbar_title:hover {
@@ -126,6 +134,10 @@ textarea {
   margin: 0 1rem;
   padding: 1rem;
   transition: all 0.2s;
+  animation: nav_link_load var(--nav_link_load_time) ease-in
+    var(--nav_load_time);
+  animation-fill-mode: forwards;
+  transform: scale(0);
 }
 
 .navbar ul li:last-of-type {
@@ -168,8 +180,23 @@ textarea {
 }
 
 .page_heading_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   vertical-align: top;
   flex-shrink: 0;
+  animation: content_load 300ms ease-in var(--content_load_delay);
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.page_content {
+  animation: content_load 300ms ease-in calc(var(--content_load_delay) + 200ms);
+  animation-fill-mode: forwards;
+  transform: translateY(-20px);
+  opacity: 0;
 }
 
 .page_heading {
@@ -180,7 +207,8 @@ textarea {
 
 .heading_horizontal_line {
   border: 2px solid rgba(136, 131, 131, 0.411);
-  width: 100%;
+  width: 50%;
+  align-self: center;
 }
 
 .nav_page_blur {
@@ -271,5 +299,41 @@ textarea {
   .navbar ul li.active a,
   .navbar ul li.active a:hover {
     color: #87ceeb;
+  }
+}
+
+@keyframes nav_load {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav_link_load {
+  0% {
+    transform: scale(0);
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes content_load {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
