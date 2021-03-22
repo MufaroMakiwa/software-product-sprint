@@ -18,7 +18,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  padding: 24px;
+  padding: 32px;
 }
 
 .container_margin {
@@ -36,7 +36,7 @@
   font-size: 1.5em;
   margin-right: 16px;
   text-align: left;
-  transition: all 0.2s;
+  transition: all 0.3s;
 }
 
 .project_link_container {
@@ -44,7 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.2s;
+  transition: all 0.3s;
   margin-left: 16px;
 }
 
