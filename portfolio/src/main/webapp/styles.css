@@ -8,7 +8,7 @@
   --nav_load_time: 300ms;
   --nav_link_load_time: 500ms;
   --content_load_delay: calc(var(--nav_load_time) + var(--nav_link_load_time));
-  --side_padding: 32px;
+  --side_padding: 40px;
   --link_active: #49aaca;
   --nav_link_hover: #ffa500;
   font-family: "Inter", sans-serif;
@@ -52,7 +52,7 @@ textarea {
   display: flex;
   width: 100%;
   height: var(--navbar_height);
-  background: white;
+  background: rgba(255, 255, 255, 0.98);
   justify-content: center;
   align-items: center;
   -webkit-box-shadow: 0 10px 6px -6px var(--navbar_shadow);
@@ -298,6 +298,10 @@ textarea {
   .navbar ul li.active a,
   .navbar ul li.active a:hover {
     color: #87ceeb;
+  }
+
+  .page_heading {
+    font-size: 2em;
   }
 }
 
