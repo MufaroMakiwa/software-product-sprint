@@ -18,41 +18,41 @@ Click the **Start** button to begin!
 You'll be working from the `portfolio` directory. Take a minute to look at the
 files under that directory.
 
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/portfolio/pom.xml">
-      pom.xml
-    </walkthrough-editor-open-file>
-    is a Maven configuration file. This file sets up the libraries the project
-    uses.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/portfolio/src/main/webapp/index.html">
-      index.html
-    </walkthrough-editor-open-file>
-    is an HTML file that will be rendered by the browser.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/portfolio/src/main/webapp/script.js">
-      script.js
-    </walkthrough-editor-open-file>
-    contains JavaScript that makes the page interactive.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/portfolio/src/main/webapp/style.css">
-      style.css
-    </walkthrough-editor-open-file>
-    contains CSS that styles the page.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/portfolio/src/main/appengine/app.yaml">
-      app.yaml
-    </walkthrough-editor-open-file>
-    is App Engine's configuration file. This file tells Google Cloud how to
-    deploy your code, e.g. by using Java 11.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/portfolio/src/main/java/com/google/sps/ServerMain.java">
-      ServerMain.java
-    </walkthrough-editor-open-file>
-    is a Java class that contains a `main()` method that runs a web server. The
-    web server handles *requests* to specific URLs by *responding* with content
-    or a file. You'll most likely never have to change the `ServerMain` file,
-    but if you're curious about how the server runs, start by looking here!
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/portfolio/pom.xml">
+  pom.xml
+  </walkthrough-editor-open-file>
+  is a Maven configuration file. This file sets up the libraries the project
+  uses.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/portfolio/src/main/webapp/index.html">
+  index.html
+  </walkthrough-editor-open-file>
+  is an HTML file that will be rendered by the browser.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/portfolio/src/main/webapp/script.js">
+  script.js
+  </walkthrough-editor-open-file>
+  contains JavaScript that makes the page interactive.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/portfolio/src/main/webapp/style.css">
+  style.css
+  </walkthrough-editor-open-file>
+  contains CSS that styles the page.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/portfolio/src/main/appengine/app.yaml">
+  app.yaml
+  </walkthrough-editor-open-file>
+  is App Engine's configuration file. This file tells Google Cloud how to
+  deploy your code, e.g. by using Java 11.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/portfolio/src/main/java/com/google/sps/ServerMain.java">
+  ServerMain.java
+  </walkthrough-editor-open-file>
+  is a Java class that contains a `main()` method that runs a web server. The
+  web server handles _requests_ to specific URLs by _responding_ with content
+  or a file. You'll most likely never have to change the `ServerMain` file,
+  but if you're curious about how the server runs, start by looking here!
 
 Try navigating to the various files in this project and viewing their contents
 in the Google Cloud Shell editor.
@@ -100,7 +100,7 @@ the next step!
 Open the
 <walkthrough-editor-open-file
     filePath="software-product-sprint/portfolio/src/main/webapp/index.html">
-  index.html
+index.html
 </walkthrough-editor-open-file>
 file in the Google Cloud Shell editor.
 
@@ -142,43 +142,43 @@ cache-clearing refresh.
 The `examples/stanley` directory contains an example webpage. It contains
 several files and directories:
 
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/pom.xml">
-      pom.xml
-    </walkthrough-editor-open-file>
-    is Maven's configuration file.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/index.html">
-      index.html
-    </walkthrough-editor-open-file>
-    uses HTML tags to create a homepage that links to other pages.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/images.html">
-      images.html
-    </walkthrough-editor-open-file>
-    uses HTML tags to create an image gallery.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/random.html">
-      random.html
-    </walkthrough-editor-open-file>
-    loads JavaScript that shows a random image from the gallery.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/script.js">
-      script.js
-    </walkthrough-editor-open-file>
-    is JavaScript that defines a function that shows a random image.
--   `images/` contains the images used in the above files.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/style.css">
-      style.css
-    </walkthrough-editor-open-file>
-    is a CSS file that defines the styling for the HTML content.
--   `/WEB-INF` contains files that visitors to the site can't navigate to.
--   <walkthrough-editor-open-file
-        filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/java/com/google/sps/ServerMain.java">
-      ServerMain.java
-    </walkthrough-editor-open-file>
-    is the main Java class that that runs a web server.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/pom.xml">
+  pom.xml
+  </walkthrough-editor-open-file>
+  is Maven's configuration file.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/index.html">
+  index.html
+  </walkthrough-editor-open-file>
+  uses HTML tags to create a homepage that links to other pages.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/images.html">
+  images.html
+  </walkthrough-editor-open-file>
+  uses HTML tags to create an image gallery.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/random.html">
+  random.html
+  </walkthrough-editor-open-file>
+  loads JavaScript that shows a random image from the gallery.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/script.js">
+  script.js
+  </walkthrough-editor-open-file>
+  is JavaScript that defines a function that shows a random image.
+- `images/` contains the images used in the above files.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/webapp/style.css">
+  style.css
+  </walkthrough-editor-open-file>
+  is a CSS file that defines the styling for the HTML content.
+- `/WEB-INF` contains files that visitors to the site can't navigate to.
+- <walkthrough-editor-open-file
+      filePath="software-product-sprint/walkthroughs/week-1-web-development/examples/stanley/src/main/java/com/google/sps/ServerMain.java">
+  ServerMain.java
+  </walkthrough-editor-open-file>
+  is the main Java class that that runs a web server.
 
 Deploy the example webpage by `cd`-ing into the
 `~/software-product-sprint/walkthroughs/week-1-web-development/examples/stanley`
@@ -202,9 +202,9 @@ directory.
 
 If you're new to HTML, that's okay! Here are a few place to learn more:
 
--   [W3Schools](https://www.w3schools.com/html/default.asp)
--   [MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
--   [Google's HTML Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
+- [W3Schools](https://www.w3schools.com/html/default.asp)
+- [MDN](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics)
+- [Google's HTML Style Guide](https://google.github.io/styleguide/htmlcssguide.html)
 
 Don't forget that Google is your friend! For example, try searching "html list
 tag" for a ton of useful results about adding lists to HTML.
@@ -212,7 +212,7 @@ tag" for a ton of useful results about adding lists to HTML.
 For now, edit your
 <walkthrough-editor-open-file
     filePath="software-product-sprint/portfolio/src/main/webapp/index.html">
-  index.html
+index.html
 </walkthrough-editor-open-file>
 file to contain a `<p>` element that introduces you. Then run a dev server and
 confirm that you can see your change.
@@ -239,7 +239,7 @@ This URL will work on a development server and when you deploy to a live URL.
 Modify your
 <walkthrough-editor-open-file
     filePath="software-product-sprint/portfolio/src/main/webapp/index.html">
-  index.html
+index.html
 </walkthrough-editor-open-file>
 file to include an image. It can be a selfie, or an avatar, or a picture of
 your pet. This is your portfolio, so make it your own!
@@ -250,15 +250,15 @@ You can use Cascading Style Sheets, or CSS, to style your HTML with formatting
 and colors. The
 <walkthrough-editor-open-file
     filePath="software-product-sprint/portfolio/src/main/webapp/style.css">
-  style.css
+style.css
 </walkthrough-editor-open-file>
 file contains some default styling.
 
 Learning CSS is **optional** for SPS. You can skip this step if you want. But
 if you're curious, here are a few places to learn more:
 
--   [W3Schools](https://www.w3schools.com/css/)
--   [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [W3Schools](https://www.w3schools.com/css/)
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
 
 If you're interested in CSS, feel free to explore it further. But make sure you
 aren't spending most of your time on styling. You can always make your projects
@@ -271,7 +271,7 @@ You can use JavaScript to make your page interactive.
 Open the
 <walkthrough-editor-open-file
     filePath="software-product-sprint/portfolio/src/main/webapp/script.js">
-  script.js
+script.js
 </walkthrough-editor-open-file>
 file to see a function that shows a random greeting.
 
@@ -297,13 +297,13 @@ You can learn more about JavaScript at
 Your goal this week is to customize your portfolio page. What that means is up
 to you, but here are a few ideas to get you started:
 
--   Add a couple paragraphs explaining your background and what makes you you.
--   Add a list of projects you've worked on.
--   Add a link to your LinkedIn and GitHub profiles.
--   Add images! Create a gallery of your favorite places, or selfies, or
-    pictures of your pets.
--   Add a couple paragraphs explaining what you enjoy photographing.
--   Add some blog posts explaining one of your hidden talents.
+- Add a couple paragraphs explaining your background and what makes you you.
+- Add a list of projects you've worked on.
+- Add a link to your LinkedIn and GitHub profiles.
+- Add images! Create a gallery of your favorite places, or selfies, or
+  pictures of your pets.
+- Add a couple paragraphs explaining what you enjoy photographing.
+- Add some blog posts explaining one of your hidden talents.
 
 This is **your** portfolio page, so make it your own!
 
@@ -377,15 +377,15 @@ git commit -m "YOUR COMMIT MESSAGE"
 You're about to deploy your code to your live site, but first you need to
 create an App Engine Application so Google Cloud can run your server.
 
--   Navigate to
-    [https://console.cloud.google.com/appengine](https://console.cloud.google.com/appengine).
--   Make sure your project is selected in the dropdown at the top.
--   Click the `Create Application` button.
--   On the next screen, click `Create app`. The default region is fine.
--   On the next screen, select `Java` as a language and `Standard` as an
-    environment.
--   When you see `Your App Engine app has successfully been created`, you're
-    done!
+- Navigate to
+  [https://console.cloud.google.com/appengine](https://console.cloud.google.com/appengine).
+- Make sure your project is selected in the dropdown at the top.
+- Click the `Create Application` button.
+- On the next screen, click `Create app`. The default region is fine.
+- On the next screen, select `Java` as a language and `Standard` as an
+  environment.
+- When you see `Your App Engine app has successfully been created`, you're
+  done!
 
 Now when you navigate to
 [https://console.cloud.google.com/appengine](https://console.cloud.google.com/appengine),
@@ -394,13 +394,13 @@ you should see `Your App Engine application has been created`.
 ## Service Account Permissions
 
 Google Cloud uses service accounts to do certain things. To use App Engine,
-you need to enable App Engine for your service account. 
+you need to enable App Engine for your service account.
 
--   Navigate to
-    [https://console.cloud.google.com/cloud-build/settings/service-account](https://console.cloud.google.com/cloud-build/settings/service-account).
--   Make sure your project is selected in the dropdown at the top.
--   Change the `App Engine` service to `Enabled`.
--   If a dialog opens, click the `Skip` button to close it.
+- Navigate to
+  [https://console.cloud.google.com/cloud-build/settings/service-account](https://console.cloud.google.com/cloud-build/settings/service-account).
+- Make sure your project is selected in the dropdown at the top.
+- Change the `App Engine` service to `Enabled`.
+- If a dialog opens, click the `Skip` button to close it.
 
 The setting saves automatically, so you can close that tab before continuing.
 
@@ -411,25 +411,24 @@ world, you can deploy it to a live server!
 
 To deploy to a live server:
 
--   Navigate to
-    [https://console.cloud.google.com/home/dashboard](https://console.cloud.google.com/home/dashboard).
--   Make sure your project is selected in the dropdown at the top.
--   Find the **Project ID** on that page. (It should be something like lknope-sps-seasonYY)
--   Open the
-    <walkthrough-editor-open-file
-        filePath="software-product-sprint/portfolio/pom.xml">
-      pom.xml
-    </walkthrough-editor-open-file>
-    file.
--   Change `YOUR_PROJECT_ID_HERE` to your project ID.
--   Execute this command:
+- Navigate to
+  [https://console.cloud.google.com/home/dashboard](https://console.cloud.google.com/home/dashboard).
+- Make sure your project is selected in the dropdown at the top.
+- Find the **Project ID** on that page. (It should be something like lknope-sps-seasonYY)
+- Open the
+  <walkthrough-editor-open-file
+      filePath="software-product-sprint/portfolio/pom.xml">
+  pom.xml
+  </walkthrough-editor-open-file>
+  file.
+- Change `YOUR_PROJECT_ID_HERE` to your project ID.
+- Execute this command:
 
 ```bash
 mvn package appengine:deploy
 ```
 
-If you see an error that says `The current Google Cloud project does
-not contain an App Engine application`, then make sure you created
+If you see an error that says `The current Google Cloud project does not contain an App Engine application`, then make sure you created
 an App Engine application in the previous step!
 
 After the command successfully completes, you can now navigate to
@@ -469,4 +468,3 @@ When you're ready, start the next walkthrough by running this command:
 ```bash
 teachme ~/software-product-sprint/walkthroughs/week-2-server/project-1-walkthrough.md
 ```
-

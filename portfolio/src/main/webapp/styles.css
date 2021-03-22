@@ -132,6 +132,7 @@ textarea {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  transition: none;
 }
 
 .navbar ul li {
@@ -208,6 +209,7 @@ textarea {
   font-size: 2.5em;
   font-weight: bold;
   border-bottom: 3px solid rgba(136, 131, 131, 0.411);
+  transition: all 0.2s;
 }
 
 .nav_page_blur {
@@ -226,6 +228,9 @@ textarea {
   }
 }
 
+@media screen and (min-width: 725px) {
+}
+
 @media screen and (max-width: 725px) {
   .nav_open .nav_page_blur {
     display: block;
@@ -235,7 +240,6 @@ textarea {
 
   .navbar ul {
     transform: translateX(100%);
-    transition: all 0.2s;
     width: 50%;
     position: fixed;
     display: block;
@@ -252,6 +256,7 @@ textarea {
 
   .nav_open .navbar {
     z-index: 10;
+    box-shadow: none;
   }
 
   .navbar_toggle {

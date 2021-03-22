@@ -77,6 +77,10 @@
   color: var(--link_active);
 }
 
+.project_link_desc:hover {
+  color: var(--nav_link_hover);
+}
+
 @media screen and (max-width: 725px) {
   .projects_page_content {
     margin: 32px 0;

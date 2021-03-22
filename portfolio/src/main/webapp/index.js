@@ -1,4 +1,4 @@
-const openNav = (element) => {
+const openNav = () => {
   document.body.classList.toggle('nav_open');
 }
 
