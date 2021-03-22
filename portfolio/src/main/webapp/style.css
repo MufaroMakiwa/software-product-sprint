@@ -20,6 +20,12 @@ select:focus {
   outline: none;
 }
 
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 .background {
   position: fixed;
   top: 0;
