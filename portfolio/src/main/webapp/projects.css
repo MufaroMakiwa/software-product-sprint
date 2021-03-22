@@ -42,8 +42,8 @@
 }
 
 .project_link_icon {
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   filter: invert(72%) sepia(10%) saturate(2924%) hue-rotate(159deg)
     brightness(85%) contrast(82%);
 }
@@ -64,6 +64,11 @@
   line-height: 1.5em;
   margin-top: 16px;
   text-justify: inter-word;
+}
+
+.project_link_desc {
+  text-decoration: none;
+  color: var(--link_active);
 }
 
 @media screen and (max-width: 725px) {
