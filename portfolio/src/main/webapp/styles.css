@@ -72,14 +72,13 @@ textarea {
 }
 
 .navbar_title {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  display: inline-block;
+  text-align: left;
   font-weight: bold;
   font-size: 1.5em;
   color: black;
   text-decoration: none;
-  transition: all 0.2s;
+  transition: transform 0.2s;
   animation: nav_link_load var(--nav_link_load_time) ease-in
     var(--nav_load_time);
   animation-fill-mode: forwards;
@@ -87,7 +86,6 @@ textarea {
 }
 
 .navbar_title:hover {
-  transform: scale(1.05);
   color: gray;
 }
 
@@ -156,14 +154,16 @@ textarea {
 }
 
 .navbar ul li a {
+  display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
   color: black;
-  transition: all 0.3;
+  transition: all 0.3s;
 }
 
 .navbar ul li a:hover {
   color: var(--nav_link_hover);
+  transform: scale(1.1);
 }
 
 .navbar ul li.active a,
@@ -222,16 +222,13 @@ textarea {
   transition: all 0.2s;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1060px) {
   .navbar ul li {
     margin: 0;
   }
 }
 
-@media screen and (min-width: 725px) {
-}
-
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 900px) {
   .nav_open .nav_page_blur {
     display: block;
     background-color: rgba(0, 0, 0, 0.5);
@@ -297,16 +294,22 @@ textarea {
   }
 
   .nav_open .navbar ul li a:hover {
-    color: #ffa500;
+    color: var(--nav_link_hover);
   }
 
   .navbar ul li.active a,
   .navbar ul li.active a:hover {
-    color: #87ceeb;
+    color: var(--link_active);
   }
 
   .page_heading {
     font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 14px;
   }
 }
 

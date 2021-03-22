@@ -14,6 +14,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: all 0.3s;
 }
 
 .contact_name_email {
@@ -107,4 +108,16 @@
   font-size: 1.1em;
   color: white;
   margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1060px) {
+  .contact_form {
+    min-width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact_form {
+    min-width: 80%;
+  }
 }

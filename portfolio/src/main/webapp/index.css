@@ -76,7 +76,7 @@ body {
 
 .home_buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0;
   flex-direction: row;
   justify-content: center;
@@ -106,7 +106,7 @@ body {
 }
 
 .home_nav:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
 .home_profile_links {

@@ -9,6 +9,7 @@
   background-color: white;
   border-radius: 8px;
   margin: 32px;
+  transition: all 0.3s;
 }
 
 .project_container {
@@ -16,7 +17,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: left;
+  align-items: flex-start;
   padding: 24px;
 }
 
@@ -32,7 +33,7 @@
 }
 
 .project_title {
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-right: 16px;
   text-align: left;
   transition: all 0.2s;
@@ -81,13 +82,13 @@
   color: var(--nav_link_hover);
 }
 
-@media screen and (max-width: 725px) {
+@media screen and (max-width: 900px) {
   .projects_page_content {
     margin: 32px 0;
   }
 
   .project_title {
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 8px 0;
   }
 }
