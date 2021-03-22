@@ -1,5 +1,5 @@
 :root {
-  --border_color: rgba(255, 255, 255, 0.7);
+  --home_border_color: rgba(255, 255, 255, 1);
 }
 
 body {
@@ -53,12 +53,12 @@ body {
 
 .home_vertical_line {
   height: 50px;
-  border-left: 2px solid var(--border_color);
+  border-left: 2px solid var(--home_border_color);
 }
 
 .home_horizontal_line {
   width: 100%;
-  background-color: var(--border_color);
+  background-color: var(--home_border_color);
   height: 2px;
   border: 0;
 }
@@ -78,7 +78,7 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 1px solid var(--border_color);
+  border: 1px solid var(--home_border_color);
 }
 
 .home_button_link {
@@ -88,7 +88,8 @@ body {
   justify-content: center;
   color: white;
   text-decoration: none;
-  border: 1px solid var(--border_color);
+  border: 1px solid var(--home_border_color);
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .home_nav {

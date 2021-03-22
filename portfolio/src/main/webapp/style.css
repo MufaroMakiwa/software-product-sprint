@@ -73,6 +73,57 @@ select:focus {
   color: gray;
 }
 
+.navbar_toggle {
+  display: none;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+
+.navbar_toggle:hover > * {
+  background-color: skyblue;
+}
+
+.navbar_icon {
+  display: block;
+  position: relative;
+}
+
+.navbar_icon {
+  width: 2em;
+  height: 3px;
+  background-color: gray;
+  transition: transform 0.2s ease-in-out;
+}
+
+.navbar_icon.top {
+}
+
+.navbar_icon.middle {
+  margin: 6px 0;
+}
+
+.navbar_icon.bottom {
+}
+
+.nav_open .navbar_toggle {
+  transform: translate(-4px);
+}
+
+.nav_open .navbar_icon.middle {
+  visibility: hidden;
+}
+
+.nav_open .navbar_icon.top {
+  transform: rotate(45deg) translate(12px);
+}
+
+.nav_open .navbar_icon.bottom {
+  transform: rotate(-45deg) translate(12px);
+}
+
 .navbar ul {
   display: flex;
   list-style: none;
@@ -84,6 +135,7 @@ select:focus {
 .navbar ul li {
   margin: 0 1rem;
   padding: 1rem;
+  transition: all 0.2s;
 }
 
 .navbar ul li:last-of-type {
@@ -139,4 +191,20 @@ select:focus {
 .heading_horizontal_line {
   border: 2px solid rgba(136, 131, 131, 0.411);
   width: 100%;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar ul li {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .navbar ul {
+    display: none;
+  }
+
+  .navbar_toggle {
+    display: block;
+  }
 }
