@@ -29,6 +29,24 @@ textarea {
   font-size: inherit;
 }
 
+.page_loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: whitesmoke;
+  z-index: 100;
+}
+
+.page_loader.hidden {
+  animation: page_loader_anim 1s;
+  animation-fill-mode: forwards;
+}
+
 .background {
   position: fixed;
   top: 0;
@@ -203,12 +221,7 @@ textarea {
   padding: 32px;
   font-size: 2.5em;
   font-weight: bold;
-}
-
-.heading_horizontal_line {
-  border: 2px solid rgba(136, 131, 131, 0.411);
-  width: 50%;
-  align-self: center;
+  border-bottom: 3px solid rgba(136, 131, 131, 0.411);
 }
 
 .nav_page_blur {
@@ -299,6 +312,13 @@ textarea {
   .navbar ul li.active a,
   .navbar ul li.active a:hover {
     color: #87ceeb;
+  }
+}
+
+@keyframes page_loader_anim {
+  100% {
+    opacity: 0;
+    visibility: hidden;
   }
 }
 

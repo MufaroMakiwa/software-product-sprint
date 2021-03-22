@@ -15,6 +15,10 @@
   </head>
 
   <body>  
+    <div class="page_loader">
+      <img src="images/loading.gif"/>
+    </div>
+
     <nav class="navbar" >
       <div class="navbar_content">
         <a href="/" class="navbar_title">      
@@ -40,7 +44,6 @@
     <div class="page_container"> 
       <div class="page_heading_container">
         <h1 class="page_heading">About</h1>
-        <hr class="heading_horizontal_line"/>
       </div>
 
       <div class="about_page_content page_content">
@@ -66,6 +69,10 @@
 
     <script>
       particlesJS.load("about_particles_div", "particles.json")
+      window.addEventListener("load", () => {
+        const loader = document.querySelector(".page_loader");
+        loader.className += " hidden";
+      })
     </script>
   </body>
 </html>
