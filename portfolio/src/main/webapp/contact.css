@@ -1,0 +1,123 @@
+.contact_page_content {
+  width: 100%;
+  margin-top: 32px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_form {
+  min-width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.contact_name_email {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact_input {
+  text-decoration: none;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border_color);
+}
+
+.contact_name_input {
+  -webkit-appearance: none;
+  width: 50%;
+  margin-right: 12px;
+}
+
+.contact_email_input {
+  -webkit-appearance: none;
+  width: 50%;
+  margin-left: 12px;
+}
+
+.contact_subject_message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact_subject_input {
+  -webkit-appearance: none;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.contact_message_input {
+  -webkit-appearance: none;
+  width: 100%;
+  margin-top: 24px;
+  height: 200px;
+  resize: none;
+}
+
+.contact_submit_button {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 8px;
+  width: 50%;
+  padding: 16px;
+  margin-top: 40px;
+  background-color: var(--button_color);
+  color: white;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contact_submit_button:hover {
+  background-color: var(--button_color_hover);
+}
+
+.contact_error_message {
+  color: rgb(250, 109, 109);
+  font-size: 0.8em;
+  padding: 8px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contact_messages {
+  border-radius: 16px;
+  margin-top: 64px;
+  width: 60%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border_color);
+}
+
+.messages_header {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: white;
+  margin-bottom: 32px;
+}
+
+@media screen and (max-width: 1060px) {
+  .contact_form {
+    min-width: 70%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contact_form {
+    min-width: 80%;
+  }
+}

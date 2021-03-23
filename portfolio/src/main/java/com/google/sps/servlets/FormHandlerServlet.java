@@ -32,6 +32,6 @@ public class FormHandlerServlet extends HttpServlet {
     FullEntity messageEntity = Entity.newBuilder(keyFactory.newKey()).set("name", name).set("email", email)
         .set("subject", subject).set("message", message).set("timestamp", System.currentTimeMillis()).build();
     datastore.put(messageEntity);
-    response.sendRedirect("/");
+    response.sendRedirect("/contact.html");
   }
 }

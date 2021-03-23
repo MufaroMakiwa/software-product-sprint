@@ -3,147 +3,62 @@
   <head>
     <meta charset="UTF-8">
     <title>Mufaro's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="background.css">   
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="index.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css"> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="script.js"></script>
-    <script src="server.js"></script>
-    <script src="contact.js"></script>
   </head>
 
   <body>  
-    <div class="background">
-      <div class="stars stars_main"></div>
-      <div class="stars2 stars_main"></div>
-      <div class="stars3 stars_main"></div>
-    </div>  
-
-    <div class="content">
-      <nav class="navbar" >
-        <div class="navbar_content">
-          <div class="title hidden" id="navbar_title">
-            Mufaro's Portfolio
-          </div>
-
-          <ul class="menu">
-            <li class="active"><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#other">Other</a></li>            
-          </ul>
+    <div class="home_background"></div>
+    <div class="home_container">
+      <div class="home_main">
+        <div class="home_image_container">
+          <img class="home_image" src="/images/me.jpg" />
         </div>
-      </nav>
-
-      <section id="home">
-        <div class="home_page_container">
-          <div class="header">
-            <span class="home_header_text">Mufaro's Portfolio</span>
-            
-            <hr class="heading_horizontal_line"/>
-
-            <div class="profile_links">
-              <a style="text-decoration: none;" href="mailto:mmakiwa@mit.edu" target="_blank" rel="noopener noreferrer">
-                <img class="home_profile_link" src="/images/email.png" />
-              </a>
-
-              <a style="text-decoration: none;" href="https://www.linkedin.com/in/mufaro-makiwa-56331b158/" target="_blank" rel="noopener noreferrer">
-                <img class="home_profile_link" src="/images/linkedin.png" />
-              </a>
-
-              <a style="text-decoration: none;" href="https://github.com/MufaroMakiwa" target="_blank" rel="noopener noreferrer">
-                <img class="home_profile_link" src="/images/github.png" />
-              </a>
-            </div>
-          </div>
-
-          <div class="profile_image_container">
-            <img src="/images/happy.jpg" />
-          </div>
+        <div class="home_vertical_line"></div>
+        <hr class="home_horizontal_line" />
+        <span class="home_name">
+          MUFARO E. MAKIWA
+        </span>
+        <div class="home_profile_links">
+          <a class="home_link" href="https://github.com/MufaroMakiwa" target="_blank" rel="noopener noreferrer">
+            <img src="/images/github.svg" class="home_link_icon"/>
+            <span class="home_link_text">Github</span>
+          </a>
+          <a class="home_link" href="https://www.linkedin.com/in/mufaro-makiwa-56331b158/" target="_blank" rel="noopener noreferrer">
+            <img src="/images/linkedin.svg" class="home_link_icon"/>
+            <span class="home_link_text">LinkedIn</span>
+          </a>
+          <a class="home_link" href="mailto:mufaroemakiwa@gmail.com" target="_blank" rel="noopener noreferrer">
+            <img src="/images/gmail.svg" class="home_link_icon"/>
+            <span class="home_link_text">Email</span>
+          </a>
         </div>
-      </section>
-
-      <section id="about">
-        <div class="section_heading_container">
-          <h1 class="section_heading">About</h1>
-          <hr class="heading_horizontal_line"/>
-        </div>
-        
-        <div class="section_content">
-          <p class="about">
-            My name is Mufaro Makiwa. I was grew up Zimbabwe, where I spent 19 years before moving to the United 
-            States for college.I am currently a sophomore at Massachusetts Institute of Technology studying Electrical 
-            Engineering and Computer Science, better known as Course 6-2. My favorite musical instrument is the bass 
-            guitar which I have been learning to play for the past 2 years with very little progress. I love eating 
-            strawberry ice cream lot, usually watching or even repeating old episodes of my favorite show, The Blacklist. 
-          </p>
-
-          <div class="quotes_container">
-      
-            <p>Click button below to get a random quote from my favorite show: The Blacklist:</p>
-
-            <button class="quote_button" onclick="addRandomGreeting()">GET QUOTE</button>
-
-            <div id="greeting-container" class="text-container">
-              <span class="placeholder_text">Click button above to get random quote</span>
-            </div>
-          </div>
-        </div>               
-      </section>
-      
-      <section id="projects" >
-        <div class="section_heading_container">
-          <h1 class="section_heading">Projects</h1>
-          <hr class="heading_horizontal_line"/>
-        </div>
-
-        <div class="section_content">
-          <hi>TO CONTAIN PROJECTS I HAVE DONE</hi>
-        </div>    
-      </section>
-
-      <section id="contact" >
-        <div class="section_heading_container">
-          <h1 class="section_heading">Contact Me</h1>
-          <hr class="heading_horizontal_line"/>
-        </div>
-
-        <div class="section_content contact_section">
-          <form 
-            action="/contact-form-handler" 
-            method="POST"
-            class="contact_form">
-            
-            <div class="name_email">
-              <input type="text" placeholder="Name" class="name_input" name="name_input" autoComplete="off" id="name_input" onkeydown="return event.key != 'Enter';" />
-              <input type="text" placeholder="Email" class="email_input" name="email_input" autoComplete="off" id="email_input" onkeydown="return event.key != 'Enter';" />
-            </div>
-
-            <div class="subject_message">
-              <input type="text" placeholder="Subject" class="subject_input" name="subject_input" autoComplete="off" id="subject_input" onkeydown="return event.key != 'Enter';" />
-              <textarea type="text" resize="none" placeholder="Message" class="message_input" name="message_input" autoComplete="off" id="message_input"></textarea>
-              <input type="submit" class="submit_button" id="submit_button" />
-            </div>
-          </form>
-
+        <hr class="home_horizontal_line" />
+        <div class="home_vertical_line"></div>
+        <div class="home_buttons">
+          <a href="/about.html" class="home_button_link">
+            <span class="home_nav">ABOUT</span>
+          </a>
+          <a href="/classes.html" class="home_button_link">
+            <span class="home_nav">CLASSES</span>
+          </a>
+          <a href="/projects.html" class="home_button_link">
+            <span class="home_nav">PROJECTS</span>
+          </a>
+          <a href="/contact.html" class="home_button_link">
+            <span class="home_nav">CONTACT</span>
+          </a>
+          <a href="/MufaroMakiwa.pdf" target="_blank" rel="noopener noreferrer" class="home_button_link">
+            <span class="home_nav">RESUME</span>
+          </a>
           
-          <div class="messages" id="messages_container">
-            <span class="messages_header">Current Messages</span>
-          </div>
-
         </div>
-      </section>
-
-      <section id="other">
-        <div class="section_content">
-          <button class="quote_button" onclick="getRandomMessage()">GET RANDOM QUOTE</button>
-
-          <div class="text-container" id="server-text-container">
-            <span class="placeholder_text">Click button above to get random quote</span>
-          </div>
-        </div>
-      </section>
+      </div>
+      
+      
 
     </div>
   </body>

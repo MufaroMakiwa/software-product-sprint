@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mufaro's Portfolio | Projects</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="projects.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css"> 
+    <script src="particles.js"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>  
+    <nav class="navbar" >
+      <div class="navbar_content">
+        <a href="/" class="navbar_title">      
+          Mufaro E. Makiwa
+        </a>
+
+        <button class="navbar_toggle" onclick="openNav()">
+          <span class="navbar_icon top"></span>
+          <span class="navbar_icon middle"></span>
+          <span class="navbar_icon bottom"></span>
+        </button>
+
+
+        <ul>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/classes.html">Classes</a></li>
+          <li class="active"><a href="/projects.html">Projects</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/MufaroMakiwa.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>            
+        </ul>
+      </div>
+    </nav>  
+    <div class="nav_page_blur" onclick=""></div>
+    <div class="background" id="projects_particles_div"></div>
+    <div class="page_container projects"> 
+      <div class="page_heading_container">
+        <h1 class="page_heading">Projects</h1>
+      </div>
+
+      <div class="projects_page_content page_content">
+
+        <div class="project_container">
+          <div class="project_title_container">
+            <span class="project_title">PLAN-IT</span>
+            <span class="project_title_separator">&bull;</span>
+            <a class="project_link_container" href="https://github.com/weblab-class/MufaroMakiwa-shreya2142-nisargdharia" target="_blank" rel="noopener noreferrer">
+              <img src="/images/github.svg" class="project_link_icon"/>
+            </a>
+          </div>
+
+          <span class="project_period">January 2021</span>
+          <span class="project_description">
+            This is a web application that I built with two of my classmates for a web 
+            development class where we were taught the basics of HTML, CSS, and 
+            Javascript as well React.js and Node.js.
+          </span>
+
+          <span class="project_description">
+            <a class="project_link_desc" href="https://tag-youre-plan-it.herokuapp.com" target="_blank" rel="noopener noreferrer">PLAN_IT</a> 
+            is a progress tracker targeting high school and college students 
+            which helps them keep track of tasks that they intend to do on a daily, 
+            weekly or monthly basis. To encourage users to use our platform more, we 
+            added a feature whereby each user can connect with friends and challenge 
+            each other to do tasks.
+          </span>
+        </div>
+
+        <div class="project_container container_margin">
+          <div class="project_title_container">
+            <span class="project_title">MutapaMaps</span>
+            <span>&bull;</span>
+            <a class="project_link_container" href="https://github.com/MufaroMakiwa/MutapaMaps" target="_blank" rel="noopener noreferrer">
+              <img src="/images/github.svg" class="project_link_icon"/>
+            </a>
+          </div>
+
+          <span class="project_period">December 2020 - present</span>
+          <span class="project_description">
+            MutapaMaps is an Android Application that is aimed to improve the navigation 
+            system in Zimbabwe. While working with a start-up in Zimbabwe called Mutapa, 
+            I helped to develop the Motapa Location Encoding System that 
+            helps to navigate to remote areas in Zimbabwe which are normally not 
+            reachable using any of the known Location Encoding Systems, as well as 
+            communicate one’s location using a short alpha-numeric called Hexcode.
+          </span>
+        </div>
+
+        <div class="project_container container_margin">
+          <div class="project_title_container">
+            <span class="project_title">Crossword Puzzle Solver</span>
+            <span class="project_title_separator">&bull;</span>
+            <a class="project_link_container" href="https://github.com/MufaroMakiwa/crossword_puzzle" target="_blank" rel="noopener noreferrer">
+              <img src="/images/github.svg" class="project_link_icon"/>
+            </a>
+          </div>
+
+          <span class="project_period">December 2020</span>
+          <span class="project_description">
+            As a way to apply what I learnt from MIT’s introduction to Algorithms class (6.006), 
+            I wrote this code that finds a solution to any crossword puzzle given its 
+            possible solutions. This program implements the back-tracking algorithm and 
+            it is guaranteed to find a solution to a crossword puzzle from the given 
+            list of solutions.
+          </span>
+        </div>
+
+
+        <div class="project_container container_margin">
+          <div class="project_title_container">
+            <span class="project_title">Point in Polygon</span>
+            <span class="project_title_separator">&bull;</span>
+            <a class="project_link_container" href="https://github.com/MufaroMakiwa/Point_in_polygon" target="_blank" rel="noopener noreferrer">
+              <img src="/images/github.svg" class="project_link_icon"/>
+            </a>
+          </div>
+
+          <span class="project_period">August 2020</span>
+          <span class="project_description">
+            Given a Hexcode (described above) that identifies a location in Zimbabwe, 
+            this algorithm helps to determine the province/district/ward of Zimbabwe that 
+            point is in. Zimbabwe is divided into 10 administrative provinces, which are 
+            divided into 59 districts and 1,200 wards. I gathered data from Open Street 
+            Map in the form of (latitude, longitude) pairs that describes the polygon 
+            around each of these subdivisions.
+          </span>
+
+          <span class="project_description">
+            Using this data, I worked with one of my colleagues to device an 
+            algorithm that can determine the province/district/ward a location 
+            is in, given its Hexcode. This then helps to produce Hexcodes that 
+            are shorter and more meaningful to the end users as well as minimize the number 
+            of characters each person would have to memorize for any particular Hexcode.
+          </span>
+        </div>
+
+      </div>
+    </div>
+    <script>
+      particlesJS.load("projects_particles_div", "particles.json")
+    </script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mufaro's Portfolio | About</title>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="about.css"> 
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" type="text/css"> 
+    <script src="particles.js"></script>
+    <script src="quotes.js"></script>
+    <script src="index.js"></script>
+  </head>
+
+  <body>  
+    <nav class="navbar" >
+      <div class="navbar_content">
+        <a href="/" class="navbar_title">      
+          Mufaro E. Makiwa
+        </a>
+
+        <button class="navbar_toggle" onclick="openNav()">
+          <span class="navbar_icon top"></span>
+          <span class="navbar_icon middle"></span>
+          <span class="navbar_icon bottom"></span>
+        </button>
+
+        <ul>
+          <li class="active"><a href="/about.html">About</a></li>
+          <li><a href="/classes.html">Classes</a></li>
+          <li><a href="/projects.html">Projects</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+          <li><a href="/MufaroMakiwa.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>            
+        </ul>
+      </div>
+    </nav>  
+    <div class="nav_page_blur" onclick=""></div>
+    <div class="background" id="about_particles_div"></div>
+    <div class="page_container"> 
+      <div class="page_heading_container">
+        <h1 class="page_heading">About</h1>
+      </div>
+
+      <div class="about_page_content page_content">
+        <p class="about_summary">
+          My name is Mufaro Emmanuel Makiwa. I grew up in Zimbabwe and moved to the United 
+          States for college in 2019. I am currently a sophomore at Massachusetts Institute 
+          of Technology studying Electrical Engineering and Computer Science. I have an avid 
+          interest in building mobile and web application that are fast and secure while 
+          providing the best experience to the end users. I love to spend my free time 
+          learning how to play musical instruments, my favorite being the bass guitar. 
+          I also spend my time watching tv shows, and the best show I have ever watched is called The Blacklist.
+        </p>
+
+        <div class="about_quotes">
+          <button class="about_quote_button" onclick="getRandomMessage()">GET RANDOM QUOTE</button>
+
+          <div class="about_text_container" id="server-text-container">
+            <span class="about_placeholder_text">Click button above to get a random quote</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      particlesJS.load("about_particles_div", "particles.json")
+    </script>
+  </body>
+</html>
