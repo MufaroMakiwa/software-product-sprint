@@ -105,6 +105,7 @@ body {
   height: 100%;
   font-weight: bolder;
   text-align: center;
+  font-size: 0.9em;
 }
 
 .home_nav:hover {
